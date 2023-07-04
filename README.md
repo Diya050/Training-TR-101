@@ -1,22 +1,22 @@
 # Programming Fundamentals using Python Part-1
 
-- ### Importance of programming
+### Importance of programming
 
 In this digital era, the knowledge of programming is essential to bring innovation and change. To create value with your own ideas you need know coding.   Programming has become basic literacy for the 21st century.
 
-- ### Understanding programming by considering scenarios at airport
+### Understanding programming by considering scenarios at airport
 
 In the airport there are many flights landing and taking off. Unlike road traffic, the flights don’t have direct information of other flights around them. The Air Traffic Control (ATC) at the ground gives instructions to each flight on what it should do.
 
 Similarly, instructions are provided to computer to accomplish specific tasks. Such instructions are known as program and the act of creating a program is known as programming.
 
-- ### 5 minute Quiz on different problem categories
+### 5 minute Quiz on different problem categories
 
-- ### Three aspects of solving a problem - input, process and output
+### Three aspects of solving a problem - input, process and output
 
 ![Image1](Image1.png)
 
-- ### Algorithm, pseudo-code and flowchart
+### Algorithm, pseudo-code and flowchart
 
 Algorithm should be represented from the mental thoughts into a form which others can understand. There are primarily two ways of representing an algorithm:
 
@@ -26,11 +26,12 @@ Algorithm should be represented from the mental thoughts into a form which other
 For example, here is a pseudo-code and a flowchart.
 
 ![image2](image2.png)
-- ### 1 hour quiz - Variables and Operators
 
-- ### 5 minute Quiz - Iteration Constructs
+### 1 hour quiz - Variables and Operators
 
-- ### Python- data-types, variables and its dimensions
+### 5 minute Quiz - Iteration Constructs
+
+### Python- data-types, variables and its dimensions
 
 
   Python programming language supports the following datatypes:
@@ -46,7 +47,7 @@ For example, here is a pseudo-code and a flowchart.
 
   ![image3](image3.png)
 
-- ### Dynamic and static typing
+### Dynamic and Static Typing
 
 Languages like Python are dynamically typed whereas C,Go etc are statically typed.
 
@@ -70,22 +71,22 @@ var name string = "A"; //Line3
 
 Here, Line 1 is a valid statement which declares a variable num of type int. But Line 2 is invalid as we cannot assign a string value to variable num which is already declared to be of type int. Line 3 is a valid statement where name is declared and used as a string.
 
-- ### Precedence of operators
+### Precedence of Operators
 
 What do you think is the output of  5+4*9%(3+1)/6-1?
 How do you think the result of this expression is computed?
 
 It is done based on the precedence of the operators. Precedence of an operator can be identified based on the rule - BODMAS. Brackets followed by Orders (Powers, Roots), followed by modulo, Division and Multiplication, followed by Addition and Subtraction.
 
-    Brackets have the highest precedence followed by orders.
+- Brackets have the highest precedence followed by orders.
 
-    Modulo, Division and Multiplication have the same precedence. Hence if all appear in an expression, they are evaluated from Left to Right.
+- Modulo, Division and Multiplication have the same precedence. Hence if all appear in an expression, they are evaluated from Left to Right.
 
-    Addition and Subtraction have the same precedence. Hence if both appear in an expression, they are evaluated from Left to Right.
+- Addition and Subtraction have the same precedence. Hence if both appear in an expression, they are evaluated from Left to Right.
 
-- ### 21 minute quiz - Operators
+### 21 minute quiz - Operators
 
-- ### Implicit & Explicit Type Conversion
+### Implicit & Explicit Type Conversion
 
 Take a look at the below code:
 
@@ -97,8 +98,6 @@ Implicit conversions are dangerous as one may encounter unexpected result.
 
 Take a look at the below code:
 
- 
-
 num=1 + int(1.0)
 The result will be 2 !
 
@@ -106,7 +105,7 @@ If we want the output as 2, then we have to explicitly convert the float 1.0 int
 
 Programming languages define their own rule for implicit and explicit conversions and these rules will change from language to language.
 
-- ### Coding Standards- google style guide, snake_case pattern in python, importance of placing comments and use meaningful variable names
+### Coding Standards- google style guide, snake_case pattern in python, importance of placing comments and use meaningful variable names
 
 Coding standards are the set of guidelines that can be used to enhance the readability and clarity of the program and make it easy to debug and maintain the program.
 
@@ -118,32 +117,32 @@ The pattern followed in Python is known as snake_case.
 
 Apart from this, it is important to place comments wherever possible to explain code and use meaningful variable names. Comment is an explanation provided in the code which makes it easier to understand for a person who is going through the code.
 
-- ### Escape Sequences in python
+### Escape Sequences in python
 
 Escape sequence is a sequence of characters that have special meaning when enclosed in a string. It always begins with a backslash(\).
 - Formatting Output-Activity
 - Selection and Nested Selection in Pseudo-code
 - Iteration in Pseudo-code
 
-- ### Assignment Set-1
+### Assignment Set-1
 
-- ### Basics of Functions
+### Basics of Functions
 
 A function is a block of code that performs a particular task. In python, functions are declared using the keyword def.
 
 ![image5](image5.png)
 
-- ### Flow of Execution in Functions
+### Flow of Execution in Functions
 
 Analyze this code to observe :
 
-    Function call
+- Function call
 
-    Actual arguments being copied to formal arguments
+- Actual arguments being copied to formal arguments
 
-    Execution of function body
+- Execution of function body
 
-    Return from function
+- Return from function
 
 ```python
 observe1="What's happening!!"
@@ -168,15 +167,15 @@ passport_status=passport_check("M9993471")
 print("Passport is",passport_status)
 #observe1,2,3,4,5,6 are temporary variables used to explain this concept
 ```
-- ### 'return' in Function
+### 'return' in Function
 
   ![image6](image6.png)
   
-- ### Function Invocation
+### Function Invocation
 
 ![image7](image7.png)
 
-- ### 25 minute Quiz - Introduction to Functions
+### 25 minute Quiz - Introduction to Functions
 
 
 
