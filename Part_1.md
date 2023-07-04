@@ -7,8 +7,8 @@
 ---
 **Tasks Accomplished:**
 
-    -Importance of programming
-    -Understanding programming by considering scenarios at airport
+    * Importance of programming
+    * Understanding programming by considering scenarios at airport
     - 5 minute Quiz on different problem categories
     - Three aspects of solving a problem- input, process and output
     - Algorithm, pseudo-code and flowchart
