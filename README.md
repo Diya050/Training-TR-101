@@ -278,3 +278,79 @@ message=display(9)
 print(message)
 ```
 
+## Iteration Control Structures
+The flight has landed, immigration check is done and the passengers are waiting for their baggage near the conveyor belt. Conveyor belt keeps rotating until all the baggage are picked by the passengers.
+
+When we want to repeatedly execute a statement as long as a condition is met, we can use the iteration statement called as while loop. 
+
+Go through the below python code and guess the output. Assume that the number of baggage picked by the passengers will always be less than or equal to baggage_count. For this code, consider baggage picked in each iteration are 54, 20, 24, 0, 1, 0, 1.
+```python
+baggage_count=100
+no_of_baggage_picked=0
+while(baggage_count>0):
+    no_of_baggage_picked = (int)(input ("Number of baggage:"))
+    baggage_count = baggage_count - no_of_baggage_picked
+print("No. of baggage remaining:",baggage_count)
+
+```
+
+![image9](image9.png)
+
+Suppose a flight has landed with 5 passengers and immigration check needs to be done for all of them. When we want to execute some statements specific (known) number of times as in the case of immigration check, we can use a for loop as shown below:
+```python
+print("Flight has landed")
+print("Proceed for immigration check")
+for passenger_count in 1,2,3,4,5:
+    print("Immigration check done for passenger,", passenger_count)
+
+```
+
+In Python, for loop allows the loop to run over a specific sequence of values. In other words, for every value in the sequence, the loop runs once.
+
+![image10](image10.png)
+
+Consider the below code.
+
+What if we want the loop to run from 1 to 100?
+Should we modify the below code to create a sequence of values from 1 to 100?
+```python
+for number in 1,2,3,4,5:
+    print("The current number is ",number)
+```
+
+We can create a sequence of values in Python using range(x,y,step). It creates a sequence from x to y-1 with a difference of step between each value. 
+```python
+start=1
+end=10
+step=2
+for number in range (start, end, step):
+    print("The current number is ", number)
+```
+
+`start` - Starting number of the sequence
+
+`end` - Generate number up to end, but not including this number
+
+`step` - Difference between each number in the sequence
+
+It is not mandatory to give step. The default value of step is 1.
+
+## Iteration Control Structures - Nested Loops
+All passengers departing from the airport need to send their baggage for security check. Passengers may have more than one baggage. How will they make sure that all the baggage have undergone security check?
+
+Can we do this using a single loop?
+
+Here, we need to use nested loop (loop inside another loop) as we need to maintain the count of passengers and the count of baggage of each passenger.
+
+Assume that there are 5 passengers and each of them have 2 baggage. The below code will make sure that all baggage of each passenger have undergone the security check.
+```python
+number_of_passengers=5
+number_of_baggage=2
+security_check=True
+for passenger_count in range(1, number_of_passengers+1):
+    for baggage_count in range(1,number_of_baggage+1):
+        if(security_check==True):
+            print("Security check of passenger:", passenger_count, "-- baggage:", baggage_count,"baggage cleared")
+        else:
+            print("Security check of passenger:", passenger_count, "-- baggage:", baggage_count,"baggage not cleared")
+```
