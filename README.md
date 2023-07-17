@@ -348,9 +348,18 @@ number_of_passengers=5
 number_of_baggage=2
 security_check=True
 for passenger_count in range(1, number_of_passengers+1):
-    for baggage_count in range(1,number_of_baggage+1):
+    for baggage_count in range(1, number_of_baggage+1):
         if(security_check==True):
             print("Security check of passenger:", passenger_count, "-- baggage:", baggage_count,"baggage cleared")
         else:
             print("Security check of passenger:", passenger_count, "-- baggage:", baggage_count,"baggage not cleared")
+
 ```
+
+## Iteration Control Structures - 'break' & 'continue'
+
+|**Loop**|**When to use**|
+|----|---|
+|for loop with range|To create a sequence and iterate over it. Not preferred when collections are involved.|
+|for loop with in|To access the values of elements in a collection|
+|while loop|When number of iterations are not known|
