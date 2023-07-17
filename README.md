@@ -363,3 +363,34 @@ for passenger_count in range(1, number_of_passengers+1):
 |for loop with range|To create a sequence and iterate over it. Not preferred when collections are involved.|
 |for loop with in|To access the values of elements in a collection|
 |while loop|When number of iterations are not known|
+
+Go through the below code and guess the output. Assume A – Adult passenger, C- Child, FC – Flight Captain, FA – Flight Attendant, SP – Suspicious passenger. 
+```python
+for passenger in "A","A", "FC", "C", "FA",  "SP", "A", "A":
+    if(passenger=="FC" or passenger=="FA"):
+        print("No check required")
+        continue
+    if(passenger=="SP"):
+        print("Declare emergency in the airport")
+        break
+    if(passenger=="A" or passenger=="C"):
+        print("Proceed with normal security check")
+    print("Check the person")
+    print("Check for cabin baggage")
+```
+When we want to stop a loop or break away from it we can use break statement.
+
+When we want to skip the remaining portion of loop statements and continue with the next iteration, we can use continue statement.
+
+## Iteration Control Structures - Testing Loops
+In this code, we observe that loop condition will always evaluate to true. Hence the loop will never terminate.
+Such loops are known as infinite loops.
+
+Always ensure that loop will terminate in finite number of iterations.
+```python
+counter = 5
+while (counter >= 5):
+    print(counter)
+    counter = counter + 1
+                               
+```
