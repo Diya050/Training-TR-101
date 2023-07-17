@@ -11,8 +11,6 @@ In the airport there are many flights landing and taking off. Unlike road traffi
 
 Similarly, instructions are provided to computer to accomplish specific tasks. Such instructions are known as program and the act of creating a program is known as programming.
 
-## 5 minute Quiz on different problem categories
-
 ## Three aspects of solving a problem - input, process and output
 
 ![Image1](Image1.png)
@@ -28,9 +26,6 @@ For example, here is a pseudo-code and a flowchart.
 
 ![image2](image2.png)
 
-## 1 hour quiz - Variables and Operators
-
-## 5 minute Quiz - Iteration Constructs
 
 ## Python- data-types, variables and its dimensions
 
@@ -85,7 +80,6 @@ It is done based on the precedence of the operators. Precedence of an operator c
 
 - Addition and Subtraction have the same precedence. Hence if both appear in an expression, they are evaluated from Left to Right.
 
-## 21 minute quiz - Operators
 
 ## Implicit & Explicit Type Conversion
 
@@ -125,7 +119,6 @@ Escape sequence is a sequence of characters that have special meaning when enclo
 - Selection and Nested Selection in Pseudo-code
 - Iteration in Pseudo-code
 
-## Assignment Set-1
 
 ## Basics of Functions
 
@@ -170,14 +163,117 @@ print("Passport is",passport_status)
 ```
 ## 'return' in Function
 
-  ![image6](image6.png)
+![image6](image6.png)
   
 ## Function Invocation
 
 ![image7](image7.png)
 
-## 25 minute Quiz - Introduction to Functions
 
+## Control Structures
+Recall the different control structures using which the programmer specifies the order of execution of statements. The commonly used control structures in programming are:
 
+![image8](image8.png)
 
+## Selection Control Structures
 
+During check-in process in an airport, the luggage weight of each passenger is checked and in case of over-weight, they are asked to pay for extra luggage. 
+Below Python program represents the check-in process. Go through it and guess the output. 
+Assume luggage weight is always positive. 
+```python
+ticket_status="Confirmed"
+luggage_weight=32
+weight_limit=30  #Weight limit for the airline
+extra_luggage_charge=0
+if(ticket_status=="Confirmed"):
+    if(luggage_weight>0 and luggage_weight<=weight_limit):
+        print("Check-in cleared")
+    elif(luggage_weight<=(weight_limit+10)):
+        extra_luggage_charge=300*(luggage_weight-weight_limit)
+    else:
+        extra_luggage_charge=500*(luggage_weight-weight_limit)
+    if(extra_luggage_charge>0):
+        print("Extra luggage charge is Rs.", extra_luggage_charge)
+        print("Please make the payment to clear check-in")
+else:
+    print("Sorry, ticket is not confirmed")
+```
+The program you have seen uses various decision control statements for implementing the logic. Let’s explore it one by one using scenarios related to check-in process.
+
+One of the first steps during check-in process is checking the passport status. Consider the below program written for that. 
+```python
+passenger_name="Chan"
+passport_status="valid"
+if(passport_status=="valid"):
+    print("Airport security cleared")
+else:
+    print("Invalid passport")
+```
+The conditional statement used in this program is known as if-else statement.
+
+The next step in check-in process is checking the luggage weight.
+```python
+luggage_weight=30
+weight_limit=30  #Weight limit for the airline
+extra_luggage_charge=0
+if(luggage_weight>0 and luggage_weight<=weight_limit):
+    print("Check-in cleared")
+elif(luggage_weight<=(weight_limit+10)):
+    extra_luggage_charge=300*(luggage_weight-weight_limit)
+else:
+    extra_luggage_charge=500*(luggage_weight-weight_limit)
+if(extra_luggage_charge>0):
+    print("Extra luggage charge is Rs.", extra_luggage_charge)
+    print("Please make the payment to clear check-in")
+```
+The conditional statement in this program is known as the else if ladder . The conditions are evaluated from top of the ladder downwards. As soon as a true condition is encountered, the statement associated with it is executed. The remaining condition checks in the ladder will be skipped.
+
+Let’s combine the luggage check-in process with ticket validation. Ticket validation happens first followed by luggage check-in.
+```python
+ticket_status="Confirmed"
+luggage_weight=32
+weight_limit=30  #Weight limit for the airline
+extra_luggage_charge=0
+if(ticket_status=="Confirmed"):
+    if(luggage_weight>0 and luggage_weight<=weight_limit):
+        print("Check-in cleared")
+    elif(luggage_weight<=(weight_limit+10)):
+        extra_luggage_charge=300*(luggage_weight-weight_limit)
+    else:
+        extra_luggage_charge=500*(luggage_weight-weight_limit)
+    if(extra_luggage_charge>0):
+        print("Extra luggage charge is Rs.", extra_luggage_charge)
+        print("Please make the payment to clear check-in")
+else:
+    print("Sorry, ticket is not confirmed")
+
+```
+The conditional statement written in this program is known as nested if statement. In this case, an if statement is written within another if statement. Similarly, any decision logic can also be written within an else statement.
+
+`Problem Statement`
+
+Write a python program that displays a message as follows for a given number:
+
+1. If it is a multiple of three, display "Zip"
+2. If it is a multiple of five, display "Zap".
+3. If it is a multiple of both three and five, display "Zoom".
+4. If it does not satisfy any of the above given conditions, display "Invalid".
+
+`Solution`
+```python
+def display(num):
+    if(num%3 == 0 and num%5 == 0):
+       message="Zoom"
+    elif num%5 == 0:
+       message="Zap"
+    elif num%3 == 0:
+       message="Zip"
+    else:
+       message="Invalid"
+    #write your logic here
+    return message
+
+#Provide different values for num and test your program
+message=display(9)
+print(message)
+```
