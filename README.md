@@ -394,3 +394,35 @@ while (counter >= 5):
     counter = counter + 1
                                
 ```
+n case of for loops in Python, as initialization and change of value are automatically taken care, while testing we just need to test it with
+
+1. an empty sequence
+2. a non-empty sequence
+
+|Description|num_list|Expected Output|
+|-----|-----|-----|
+|Empty Sequence|[]|No output|
+|Non-empty seqeunce|[1,2,3,4,5]|1 2 3 4 5|
+
+`Problem Statement:`
+
+Write a Python program to find the sum of digits of a given number. E.g. Sum of number 123 will be 6
+Note: Initialize the number with various values and test your program.
+
+`Solution:`
+```python
+def find_sum_of_digits(number):
+    sum_of_digits=0
+    #Write your logic here
+    while(number>0):
+        last_digit = number % 10
+        sum_of_digits += last_digit
+        number = number // 10
+    return sum_of_digits
+
+#Provide different values for number and test your program
+sum_of_digits=find_sum_of_digits(123)
+print("Sum of digits:",sum_of_digits)
+```
+## Introduction to Eclipse Plug-in
+Eclipse is a modern IDE. IDE stands of Integrated Development Environment, where all the necessary tools for developing your code are integrated into one piece.
