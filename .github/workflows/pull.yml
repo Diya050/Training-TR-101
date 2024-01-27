@@ -18,12 +18,4 @@ jobs:
         git fetch
         git pull
 
-    - name: Install bench dependencies
-      run: |
-        sudo apt-get install python3-pip
-        pip3 install --user -r requirements.txt
-
-    - name: Build and Migrate
-      run: |
-        bench build
 
