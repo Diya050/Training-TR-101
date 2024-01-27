@@ -6,6 +6,7 @@
 
 ---
 **Tasks Accomplished:**
+Hi!
 - Importance of programming
 - Understanding programming by considering scenarios at airport
 - **5 minute Quiz** on different problem categories
