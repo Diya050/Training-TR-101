@@ -2,7 +2,7 @@
 ---
 **Course:** Programming Fundamentals using Python Part-1
 
-**Progress:** 25.02% completed successfully
+**Progress:** 25.02% completed
 
 ---
 **Tasks Accomplished:**
