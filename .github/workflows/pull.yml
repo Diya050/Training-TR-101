@@ -26,5 +26,4 @@ jobs:
     - name: Build and Migrate
       run: |
         bench build
-        bench migrate
 
