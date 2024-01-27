@@ -1,0 +1,30 @@
+name: Pull Changes and Build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  pull_and_build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Fetch and Pull Changes
+      run: |
+        git fetch
+        git pull
+
+    - name: Install bench dependencies
+      run: |
+        sudo apt-get install python3-pip
+        pip3 install --user -r requirements.txt
+
+    - name: Build and Migrate
+      run: |
+        bench build
+        bench migrate
+
