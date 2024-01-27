@@ -1,21 +1,18 @@
-name: Pull Changes and Build
+name: Pull Changes
 
 on:
   push:
     branches:
-      - main
+      - main # Adjust this based on your branch name
 
 jobs:
-  pull_and_build:
+  pull:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v2
 
-    - name: Fetch and Pull Changes
-      run: |
-        git fetch
-        git pull
-
+    - name: Pull Changes
+      run: git pull
 
